@@ -76,7 +76,7 @@ runs:
     - name: And if we can tree, do that too
       shell: bash
       # language=bash
-      run: tree
+      run: tree -L 2
     - name: Build environment
       shell: bash
       # language=bash
