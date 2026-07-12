@@ -25,6 +25,8 @@ jobs:
   distributions:
     runs-on: ubuntu-latest
     steps:
+      - name: Maximize build disk space
+        uses: easimon/maximize-build-space@v10
       - uses: actions/checkout@v6.0.2
       - uses: ./.github/actions/build_ide
         with:
